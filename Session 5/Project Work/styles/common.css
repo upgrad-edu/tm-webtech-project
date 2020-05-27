@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #eee;
 }
 
 .website-logo {
@@ -19,12 +20,7 @@ body {
 
 .navbar {
     background-color: #FFA500;
-    color: #fff;
     margin-bottom: 2rem;
     padding: .25rem;
     box-sizing: content-box;
-}
-
-.navbar a {
-    color: #fff;
 }

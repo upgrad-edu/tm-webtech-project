@@ -1,0 +1,13 @@
+.session-container {
+    width: 40%;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    float: left;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 0 15px;
+}
