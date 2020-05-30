@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="styles/common.css" rel="stylesheet" />
+    <link href="styles/index.css" rel="stylesheet" />
+    <title>Chef's Table</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="website-title">
+            <a href="index.html">
+                <img src="assets/images/logo-chefs-table.png" class="website-logo" />
+                <span>Chef's Table</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="live-sessions.html"><span>Live Sessions</span></a>
+            <a onclick="login()" id="login-navbar"><span>Login</span></a>
+            <div id="user"><img src="./assets/images/user-solid.svg"/><span id="user-name"></span></div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div id="slider">
+            <img src="assets/images/icon-chevron-left-arrow.png" height="20" width="20" class="slider-arrow slider-left-arrow">
+            <img src="assets/images/image-slider-dish-1.jpg">
+            <img src="assets/images/icon-chevron-right-arrow.png" height="20" width="20" class="slider-arrow slider-right-arrow">
+        </div>
+
+        <div class="recipes-container">
+            <h3>Recipes</h3>
+            <label for="categories">Choose a category:</label>
+            <select name="categories" id="categories">
+                <option value="italian">Italian</option>
+                <option value="chinese">Chinese</option>
+                <option value="continental">Continental</option>
+                <option value="dessert">Dessert</option>
+            </select>
+            <div class="recipe-titles-container">
+                <a href="recipe-detail.html" class="recipe-title">
+                    <div >
+                        Recipe 1
+                    </div>
+                </a>
+                <div class="recipe-title">Recipe 2</div>
+                <div class="recipe-title">Recipe 3</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <span class="address">
+            497 Evergreen Rd. Roseville, CA 95673
+            <br />
+            +44 345 678 903
+            <br />
+            adobexd@mail.com
+        </span>
+        <div class="social-media-icons-container">
+            <img src="assets/images/logo-facebook.png" class="social-media-icons"/>
+            <img src="assets/images/logo-instagram.png" class="social-media-icons" />
+            <img src="assets/images/logo-twitter.png" class="social-media-icons" />
+        </div>
+        <a class="contact-us" onclick="openContactUsModal()"><span>Contact Us</span></a>
+        <div class="up-arrow-container">
+            <img src="assets/images/icon-arrow-up.png" class="up-arrow-icon" />
+        </div>
+    </footer>
+
+    <div class="login-modal modal">
+        <div id="login">
+            <span class="close" onclick="closeModal()">X</span>
+            <img src="assets/images/logo-chefs-table.png" height="50" width="50" />
+            <h4>Login</h4>
+            <p id="error-msg">Wrong userame/password.</p>
+            <input type="text" placeholder="Username" id="username" />
+            <br />
+            <input type="password" placeholder="Password" id="password" />
+            <br />
+            <button id="loginButton" onclick="userLogin()">Login</button>
+        </div>
+    </div>
+
+    <div class="contactus-modal modal">
+        <div id="contactus">
+            <span class="close" onclick="closeContactUsModal()">X</span>
+            <h4>Contact Us</h4>
+            <div class="contact-form">
+                <form>
+                    <label for="name">Name:</label><br />
+                    <input type="text" id="form-name" name="name" />
+
+                    <br />
+
+                    <label for="address">Address:</label><br />
+                    <textarea id="form-address" name="address"></textarea>
+
+                    <br />
+
+                    <label for="email">Email Address:</label><br />
+                    <input type="email" id="form-email" name="email" />
+
+                    <br />
+
+                    <label for="contact">Contact Number:</label><br />
+                    <input type="number" id="form-phone" name="contact" max="10" />
+
+                    <br />
+
+                    <label for="birth-date">Date of Birth:</label><br />
+                    <input type="date" id="form-date" name="birth-date" />
+
+                    <br />
+
+                    <label for="gender">Gender:</label><br />
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+
+                    <br />
+
+                    <input type="checkbox" id="newsletter-check" name="newsletter-check" />
+                    <label for="newsletter-check">Subscribe to our newsletter.</label>
+
+                    <br />
+
+                    <input type="submit" id="submitBtn" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/common.js"></script>
+</body>
+</html>
