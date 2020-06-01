@@ -1,0 +1,155 @@
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="styles/common.css" rel="stylesheet" />
+    <link href="styles/live-sessions.css" rel="stylesheet" />
+    <title>Chef's Table | Live Sessions</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="website-title">
+            <a href="index.html">
+                <img src="assets/images/logo-chefs-table.png" class="website-logo" />
+                <span>Chef's Table</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="live-sessions.html"><span>Live Sessions</span></a>
+            <a onclick="login()" id="login-navbar"><span>Login</span></a>
+            <div id="user"><img src="./assets/images/user-solid.svg"/><span id="user-name"></span></div>
+        </div>
+    </nav>
+
+    <div class="container content">
+        <h4>Live Sessions</h4>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-12">
+                <div class="session-container card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bakery Session</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">August 21, 2020, 09.00 AM at Mahalaxmi Racecourse, Mumbai</h6>
+                        <p class="card-text">Learn how to bake amazing cakes!</p>
+                        <a href="#" class="card-link">₹ 50</a>
+                        <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NWs2OHRvbXF1MG1oNzA0N3ZtOWVrYjIzMGEgcnVzaGFiaHNoYWgyNjkzQG0&amp;tmsrc=rushabhshah2693%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-12">
+                <div class="session-container card">
+                    <div class="card-body">
+                        <h5 class="card-title">Live cooking session with Masterchef Ranveer Brar.</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">August 5, 2020, 05.00 PM at Khar, Mumbai.</h6>
+                        <p class="card-text">Join Masterchef Ranveer Brar, judge of Masterchef India fame on his quest for finding the best of Jodhpuri cuisine. Food and beverage included.</p>
+                        <a href="#" class="card-link">₹ 5000</a>
+                        <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MWFkOWZlNmJiazVmbmxtOTdmcGNkbzEyY2sgcnVzaGFiaHNoYWgyNjkzQG0&amp;tmsrc=rushabhshah2693%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-12">
+                <div class="session-container card">
+                    <div class="card-body">
+                        <h5 class="card-title">Live Session: How to make pizzas?</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">September 1, 2020 at 12:00 PM online on Zoom.</h6>
+                        <p class="card-text">Learn the Italian delight sitting at your home.</p>
+                        <a href="#" class="card-link">₹ 0</a>
+                        <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=M2VrMTNvaGFxb2pkcmRsb2Fpc3QzcTEzOTcgcnVzaGFiaHNoYWgyNjkzQG0&amp;tmsrc=rushabhshah2693%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <span class="address">
+            497 Evergreen Rd. Roseville, CA 95673
+            <br />
+            +44 345 678 903
+            <br />
+            adobexd@mail.com
+        </span>
+        <div class="social-media-icons-container">
+            <img src="assets/images/logo-facebook.png" class="social-media-icons"/>
+            <img src="assets/images/logo-instagram.png" class="social-media-icons" />
+            <img src="assets/images/logo-twitter.png" class="social-media-icons" />
+        </div>
+        <a class="contact-us" onclick="openContactUsModal()"><span>Contact Us</span></a>
+        <div class="up-arrow-container">
+            <img src="assets/images/icon-arrow-up.png" class="up-arrow-icon" />
+        </div>
+    </footer>
+
+    <div class="login-modal modal">
+        <div id="login">
+            <span class="close" onclick="closeModal()">X</span>
+            <img src="assets/images/logo-chefs-table.png" height="50" width="50" />
+            <h4>Login</h4>
+            <p id="error-msg">Wrong userame/password.</p>
+            <input type="text" placeholder="Username" id="username" />
+            <br />
+            <input type="password" placeholder="Password" id="password" />
+            <br />
+            <button id="loginButton" onclick="userLogin()">Login</button>
+        </div>
+    </div>
+
+    <div class="contactus-modal modal">
+        <div id="contactus">
+            <span class="close" onclick="closeContactUsModal()">X</span>
+            <h4>Contact Us</h4>
+            <div class="contact-form">
+                <form>
+                    <label for="name">Name:</label><br />
+                    <input type="text" id="form-name" name="name" />
+
+                    <br />
+
+                    <label for="address">Address:</label><br />
+                    <textarea id="form-address" name="address"></textarea>
+
+                    <br />
+
+                    <label for="email">Email Address:</label><br />
+                    <input type="email" id="form-email" name="email" />
+
+                    <br />
+
+                    <label for="contact">Contact Number:</label><br />
+                    <input type="number" id="form-phone" name="contact" max="10" />
+
+                    <br />
+
+                    <label for="birth-date">Date of Birth:</label><br />
+                    <input type="date" id="form-date" name="birth-date" />
+
+                    <br />
+
+                    <label for="gender">Gender:</label><br />
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+
+                    <br />
+
+                    <input type="checkbox" id="newsletter-check" name="newsletter-check" />
+                    <label for="newsletter-check">Subscribe to our newsletter.</label>
+
+                    <br />
+
+                    <input type="submit" id="submitBtn" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/common.js"></script>
+</body>
+</html>

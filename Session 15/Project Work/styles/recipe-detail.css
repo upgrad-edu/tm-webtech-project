@@ -1,0 +1,12 @@
+.recipe-video {
+    width: 100%;
+    height: 50%;
+}
+
+.content {
+    padding: 0 15px;
+}
+
+.recipe-ingredient {
+    text-transform: capitalize;
+}
