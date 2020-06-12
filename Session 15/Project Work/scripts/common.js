@@ -23,7 +23,7 @@ function closeModal() {
 
 function openContactUsModal() {
     let modal = document.getElementsByClassName("contactus-modal");
-    modal[0].style.display = "block";
+    modal[0].style.display = "flex";
 }
 
 function closeContactUsModal() {

@@ -102,6 +102,11 @@ body {
     cursor: pointer;
 }
 
+.contactus-modal {
+    flex-direction: column;
+    justify-content: center;
+}
+
 .address {
     text-indent: justify;
 }
