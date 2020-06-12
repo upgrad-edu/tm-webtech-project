@@ -15,11 +15,6 @@ body {
     width: 50px;
 }
 
-.social-media-icons {
-    height: 20px;
-    width: 20px;
-}
-
 .up-arrow-icon {
     height: 40px;
     width: 40px;
@@ -93,6 +88,9 @@ body {
 
 .social-media-icons {
     margin: 0 10px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
 }
 
 .contact-us {
