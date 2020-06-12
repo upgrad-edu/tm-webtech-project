@@ -54,3 +54,7 @@ function userLogin() {
         errorMsg.style.display = "block";
     }
 }
+
+function upArrowClick() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
