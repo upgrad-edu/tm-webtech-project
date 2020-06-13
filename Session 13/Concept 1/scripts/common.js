@@ -119,7 +119,7 @@ function footerTemplate() {
     '</div>' +
     '<a class="contact-us" onclick="openContactUsModal()"><span>Contact Us</span></a>' +
     '<div class="up-arrow-container">' +
-        '<img src="assets/images/icon-arrow-up.png" class="up-arrow-icon" />' +
+        '<img src="assets/images/icon-arrow-up.png" class="up-arrow-icon" onclick="upArrowClick()"/>' +
     '</div>';
 
     document.getElementById('footer').innerHTML += footertemplate;
