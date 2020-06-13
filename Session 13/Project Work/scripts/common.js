@@ -152,9 +152,9 @@ function footerTemplate() {
         'adobexd@mail.com' +
     '</span>' +
     '<div class="social-media-icons-container">' +
-        '<img src="assets/images/logo-facebook.png" class="social-media-icons"/>' +
-        '<img src="assets/images/logo-instagram.png" class="social-media-icons" />' +
-        '<img src="assets/images/logo-twitter.png" class="social-media-icons" />' +
+        '<a href="https://www.facebook.com/upGradGlobal/" target="_blank"><img src="assets/images/logo-facebook.png" class="social-media-icons"/></a>' +
+        '<a href="https://www.instagram.com/upgrad_edu/?hl=en" target="_blank"><img src="assets/images/logo-instagram.png" class="social-media-icons" /></a>' +
+        '<a href="https://twitter.com/upGrad_edu" target="_blank"><img src="assets/images/logo-twitter.png" class="social-media-icons" /></a>'+
     '</div>' +
     '<a class="contact-us" onclick="openContactUsModal()"><span>Contact Us</span></a>' +
     '<div class="up-arrow-container">' +
