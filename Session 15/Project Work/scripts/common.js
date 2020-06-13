@@ -23,7 +23,7 @@ function closeModal() {
 
 function openContactUsModal() {
     let modal = document.getElementsByClassName("contactus-modal");
-    modal[0].style.display = "block";
+    modal[0].style.display = "flex";
 }
 
 function closeContactUsModal() {
@@ -53,4 +53,8 @@ function userLogin() {
         let errorMsg = document.getElementById('error-msg');
         errorMsg.style.display = "block";
     }
+}
+
+function upArrowClick() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
 }
