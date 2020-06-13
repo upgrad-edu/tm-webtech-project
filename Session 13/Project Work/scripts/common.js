@@ -61,7 +61,9 @@ function userLogin() {
     }
 }
 
-
+function upArrowClick() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
 
 function loginTemplate() {
     let logintemplate = '<div id="login">' +
@@ -154,11 +156,11 @@ function footerTemplate() {
     '<div class="social-media-icons-container">' +
         '<a href="https://www.facebook.com/upGradGlobal/" target="_blank"><img src="assets/images/logo-facebook.png" class="social-media-icons"/></a>' +
         '<a href="https://www.instagram.com/upgrad_edu/?hl=en" target="_blank"><img src="assets/images/logo-instagram.png" class="social-media-icons" /></a>' +
-        '<a href="https://twitter.com/upGrad_edu" target="_blank"><img src="assets/images/logo-twitter.png" class="social-media-icons" /></a>'+
+        '<a href="https://twitter.com/upGrad_edu" target="_blank"><img src="assets/images/logo-twitter.png" class="social-media-icons" /></a>' +
     '</div>' +
     '<a class="contact-us" onclick="openContactUsModal()"><span>Contact Us</span></a>' +
     '<div class="up-arrow-container">' +
-        '<img src="assets/images/icon-arrow-up.png" class="up-arrow-icon" />' +
+        '<img src="assets/images/icon-arrow-up.png" class="up-arrow-icon" onclick="upArrowClick()"/>' +
     '</div>';
 
     document.getElementById('footer').innerHTML += footertemplate;

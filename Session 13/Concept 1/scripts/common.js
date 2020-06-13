@@ -24,6 +24,10 @@ function closeContactUsModal() {
     modal[0].style.display = "none";
 }
 
+function upArrowClick() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
 function loginTemplate() {
     let logintemplate = '<div id="login">' +
         '<span class="close" onclick="closeModal()">X</span>' +
