@@ -1,0 +1,39 @@
+.recipe-title {
+    height: 150px;
+    width: 30%;
+    float: left;
+}
+
+#slider {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.recipes-container {
+    padding: 10px 15px;
+}
+
+.recipe-titles-container {
+    margin-top: 10px;
+}
+
+.recipe-title {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.slider-arrow {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 40%;
+}
+
+.slider-left-arrow { left: 0; }
+
+.slider-right-arrow { right: 0; }

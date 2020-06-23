@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    background-color: #eee;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.website-logo {
+    height: 50px;
+    width: 50px;
+}
+
+.up-arrow-icon {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: #FFA500;
+    margin-bottom: 2rem;
+    padding: .25rem;
+    box-sizing: content-box;
+    display: flex;
+    color: #eee;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.website-title {
+    text-transform: uppercase;
+    flex-grow: 1;
+}
+
+.website-title a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #eee;
+}
+
+.nav-links {
+    float: right;
+}
+
+.nav-links a, .nav-links div {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-left: 1px solid #ccc;
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    background-color: #FFA500;
+    display: flex;
+    justify-content: space-between;
+    /* height: 50px; */
+    color: #eee;
+}
+
+.address {
+    flex-grow: 1;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.social-media-icons-container, .contact-us, .up-arrow-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media-icons {
+    margin: 0 10px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.contact-us {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-left: 1px solid #ccc;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.contactus-modal {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.address {
+    text-indent: justify;
+}
+
+.up-arrow-container {
+    background-color: #93827F;
+    width: 80px;
+    margin-left: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+#login, #contactus {
+    background-color: #fff;
+    padding: 25px;
+    height: auto;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+    margin: 15% auto;
+}
+
+#contactus {
+    width: 400px;
+}
+
+#login {
+    width: 270px !important;
+    box-sizing: border-box !important;
+    font-size: 1rem !important;
+}
+
+#login input {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 10px;
+    font-size: .83rem !important;
+}
+
+#loginButton, #submitBtn {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+#loginButton:hover, #submitBtn:hover {
+    background-color: #FFA500;
+    color: white;
+}
+
+.close {
+    top: 0;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    cursor: pointer;
+    color: #000 !important;
+    opacity: .7 !important;
+    font-size: 1rem !important;
+}
+
+.contact-form input {
+    margin-bottom: 10%;
+    height: 25px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 5px;
+    font-size: .83rem !important;
+}
+
+.contact-form label {
+    margin: 0;
+}
+
+.contact-form input[type="radio"], .contact-form input[type="checkbox"] {
+    height: initial !important;
+}
+
+.contact-form input[type="submit"] {
+    margin-left: 25%;
+}
+
+#contactus h4, #login h4 {
+    font-size: 1rem !important;
+    margin: 1.33rem 0 !important;
+}
+
+.contact-form textarea {
+    margin-bottom: 10%;
+    height: 50px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 5px;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], 
+.contact-form textarea, .contact-form input[type="number"],
+.contact-form input[type="date"] {
+    width: 100%;
+    border: 1px solid #ddd !important;
+}
+
+#error-msg {
+    color: red;
+    display: none;
+}
+
+#user {
+    display: none;
+    flex-direction: row;
+}
+
+#user img {
+    height: 20px;
+    width: 20px;
+    margin-right: 3px;
+}

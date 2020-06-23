@@ -1,0 +1,19 @@
+.all-sessions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.session-container {
+    width: 45%;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 0 15px;
+}
